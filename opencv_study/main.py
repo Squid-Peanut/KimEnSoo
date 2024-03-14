@@ -10,7 +10,7 @@ net = cv2.dnn.readNetFromDarknet(model_cfg, model_weights)
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
-# 클래스 이름 불러오기 (여기서는 COCO 데이터셋의 클래스 사용)
+
 classes = open('coco.names').read().strip().split('\n')
 
 # 동영상 파일 불러오기
